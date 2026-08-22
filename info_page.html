@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindX Cinema - Movie Info</title>
+    <link rel="stylesheet" href="css/info_style.css">
+    <script src="script/info.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 onclick="window.location.href='index.html'">Mindx Cinema</h1>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Movies</a></li>
+        </ul>
+        <button class="search-btn" onclick="window.location.href='find_page.html'">Search For Movies</button>
+    </header> 
+
+    <div class="container">
+        <img id="movie-pic" class="pic" src="" alt="movie pic">
+
+        <div class="info">
+            <button class="watch-btn">▶ Watch</button>
+
+            <h1 id="movie-title">Loading...</h1>
+
+            <div id="movie-date" class="date">
+                Release Date: ...
+            </div>
+            
+
+            <p id="movie-des">
+                Loading description...
+            </p>
+        </div>
+    </div>
+</body>
+</html>
