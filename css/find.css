@@ -10,9 +10,41 @@ header {
     column-gap: 20px;
 }
 
-h1 {
+ul.navbar li a {
+    color: #F0DBFF;
+    text-decoration: none;
+    padding: 50px;
+    list-style: none;
+    width: 100%;
+    white-space: nowrap;
+}
+ul.navbar li a.here{
     color: #fff;
-    width: 500px;
+    font-size: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 25%;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    background-color: #100f0f88;
+}
+
+h1 {
+    color: #A855F7;
+    width: 250px;
     align-items: center;
     padding: 0px 25px;
 }

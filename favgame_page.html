@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="css/favpage.css">
+    <script src="script/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GameVault</h1>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favgame_page.html" class="here">Favourite Games</a></li>
+            <li><button class="search-btn" onclick="window.location.href='find_page.html'">Search For Games</button></li>
+            <li><a href="login_page.html">Logout</a></li>
+        </ul>
+    </header> 
+
+    <div class="top-section">
+        <section class="trending-section">
+            <h2>NEW & TRENDING</h2>
+            <div id="new-games-list-container" class="trending-list"></div>
+        </section>
+
+        <section class="featured-section">
+            <h2>FEATURED</h2>
+            <div id="featured-game-container"></div>
+        </section>
+    </div>
+
+    <section class="list-games">
+        <h2 id="list-title">List Of Games</h2>
+        <div id="game-list-container" class="movie-grid"></div>
+    </section>
+
+    <button onclick="openChatBot()" class="chatBot-btn">
+        <img src="chatboticon.png" alt="Chatbot Icon" style="width: 20px; height: 20px;">
+    </button>
+
+    <footer>
+        <p>By Trần Bình Minh</p>
+    </footer>
+    <iframe
+        id="chatbot"
+        src="https://www.chatbase.co/chatbot-iframe/-XcrQquER0ESdqKqp13ms"
+        width="100%"
+        style="height: 25%; min-height: 500px; display: none; max-width: 20%; position: fixed; bottom: 80px; right: 20px;"
+        frameborder="0"
+        allow="microphone"
+    ></iframe>
+    <script>
+        let flagChatBot = false;
+        function openChatBot() {
+            let chatbot = document.getElementById("chatbot");
+            chatbot.style.display = flagChatBot ? "none" : "block";
+            flagChatBot = !flagChatBot;
+        }
+    </script>
+</body>
+</html>
