@@ -1,6 +1,4 @@
 const API_KEY = "38d56cef638f4276a3b2dffe9c3661b0";
-
-// RAWG API URLs
 const POPULAR_GAMES_URL = `https://api.rawg.io/api/games?key=${API_KEY}`;
 const NEW_GAMES_URL = `https://api.rawg.io/api/games?key=${API_KEY}&ordering=-released&dates=2024-01-01,2026-12-31`;
 
