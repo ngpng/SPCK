@@ -10,16 +10,22 @@
 
 <body>
     <header>
-        <h1 onclick="window.location.href='index.html'">GameVault</h1>
+        <h1>GameVault</h1>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Games</a></li>
+            <li><a href="favgame_page.html" >Favourite Games</a></li>
+            <li><button class="search-btn" onclick="window.location.href='find_page.html'">Search For Games</button></li>
+            <li><a href="login_page.html">Logout</a></li>
         </ul>
-        <button class="search-btn" onclick="window.location.href='find_page.html'">Search For Games</button>
     </header> 
 
     <div class="container">
-        <img id="game-pic" class="pic" src="" alt="game pic">
+        <div class=" "basic-info">
+            <img id="game-pic" class="pic" src="" alt="game pic">
+            <div class="game-rate"><span id="game-rating">Loading...</span></div>
+            <div class = "game-tag"><span id="game-tag">Loading...</span></div>
+        </div>
+        
 
         <div class="info">
             <button class="watch-btn">▶ Watch Preview</button>
@@ -30,10 +36,10 @@
                 Release Date: ...
             </div>
             
-
-            <p id="game-des">
+ 
+            <div id="game-des">
                 Loading description...
-            </p>
+            </div>
         </div>
     </div>
 </body>
