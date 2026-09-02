@@ -23,6 +23,22 @@ ul.navbar li a.here{
     font-size: 20px;
 }
 
+.search-btn {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid #DDB7FF;
+    background-color: #9E4BED;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #7B3FA0;
+    transition: background-color 0.5s ease;
+    transform: scale(1.05) ;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,15 +71,6 @@ h2 {
     padding: 0px 25px;
 }
 
-.search-btn {
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    border: 3px solid #240000;
-    background-color: #620000;
-    color: #fff;
-    cursor: pointer;
-}
 
 .movie-grid {
     display: flex;

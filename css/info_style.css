@@ -66,6 +66,12 @@ h2 {
     cursor: pointer;
 }
 
+.search-btn:hover {
+    background-color: #7B3FA0;
+    transition: background-color 0.5s ease;
+    transform: scale(1.05) ;
+}
+
 .container {
     display: flex;
     align-items: flex-start;
