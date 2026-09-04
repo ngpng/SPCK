@@ -8,6 +8,10 @@ header {
     padding: 2px;
     background-color: #100f0f88;
     column-gap: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 footer {
     position: relative;
