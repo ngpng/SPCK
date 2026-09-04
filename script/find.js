@@ -1,0 +1,1 @@
+document.getElementById("username-display").innerText = localStorage.getItem("currentUser") || "Guest";

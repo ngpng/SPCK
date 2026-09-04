@@ -6,7 +6,7 @@ function loadDashboard() {
   fetch(NEW_GAMES_URL)
     .then((res) => res.json())
     .then((data) => {
-      const newGames = data.results.slice(0, 4); 
+      const newGames = data.results.slice(0, 4);
       const container = document.getElementById("new-games-list-container");
       container.innerHTML = "";
       newGames.forEach((game) => {
@@ -17,7 +17,7 @@ function loadDashboard() {
 
         container.innerHTML += `
           <div class="trending-card" onclick="goToInfo(${game.id})">
-              <img src="${game.background_image || 'https://via.placeholder.com/180x100'}" alt="${game.name}">
+              <img src="${game.background_image || "https://via.placeholder.com/180x100"}" alt="${game.name}">
               <div class="trending-info">
                   <div class="trending-header">
                       <span class="title">${game.name}</span>
@@ -40,8 +40,10 @@ function loadDashboard() {
 
       if (games && games.length > 0) {
         const featured = games[0];
-        const featuredContainer = document.getElementById("featured-game-container");
-        
+        const featuredContainer = document.getElementById(
+          "featured-game-container",
+        );
+
         featuredContainer.innerHTML = `
           <div class="featured-card" onclick="goToInfo(${featured.id})">
               <img src="${featured.background_image}" alt="${featured.name}">
@@ -63,7 +65,7 @@ function loadDashboard() {
             <div class="movie-card" onclick="goToInfo(${game.id})">
                 <img src="${game.background_image}" alt="${game.name}">
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #fff;">${game.name}</p>
-                <p style="font-size: 12px; color: #888;">${game.released || ''}</p>
+                <p style="font-size: 12px; color: #888;">${game.released || ""}</p>
             </div>
           `;
         }
@@ -76,3 +78,7 @@ function goToInfo(id) {
 }
 
 document.addEventListener("DOMContentLoaded", loadDashboard);
+
+document.getElementById("username-display").innerText = localStorage.getItem("currentUser") || "Guest";
+
+

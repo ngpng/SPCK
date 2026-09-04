@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameVault</title>
     <link rel="stylesheet" href="css/find.css">
-    <script src="script/find.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1 onclick="window.location.href='index.html'">Mindx Cinema</h1>
+        <h1 onclick="window.location.href='index.html'">GameVault</h1>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="favgame_page.html" >Favourite Games</a></li>
             <input class="searchMovies" type="search" placeholder="Search..."></input>
             <li><a href="login_page.html">Logout</a></li>
+            <li>
+                <div class = "user-info">
+                    <span id="username-display">Loading...</span>
+                </div>
+            </li>
         </ul>
     </header> 
 
-    
+    <script src="script/find.js"></script>
 </body>
 </html>

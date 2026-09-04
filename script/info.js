@@ -21,4 +21,5 @@ if (gameId) {
   document.getElementById("game-title").innerText = "Game not found!";
 }
 
+document.getElementById("username-display").innerText = localStorage.getItem("currentUser") || "Guest";
 
