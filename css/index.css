@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #12141c;
 }
 
 header {
@@ -8,6 +8,14 @@ header {
     padding: 2px;
     background-color: #100f0f88;
     column-gap: 20px;
+}
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #0c0d17;
+    text-align: center;
+    padding: 10px 0;
 }
 
 ul.navbar li a {
@@ -60,9 +68,9 @@ h2 {
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    border: 3px solid #DDB7FF;
-    background-color: #9E4BED;
-    color: #fff;
+    border: 3px solid #490080;
+    background-color: #2C0051;
+    color: #F0DBFF;
     cursor: pointer;
 }
 
@@ -112,12 +120,13 @@ button.chatBot-btn {
     width: 50px;
     height: 50px;
     border-radius: 3px;
-    border: 3px solid #eeebeb;
-    background-color: #1f1f1f;
-    color: #fff;
+    border: 3px solid #842BD2;
+    background-color: #fff;
+    color: #0000;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    object-fit: cover;
 }
 
 .top-section {

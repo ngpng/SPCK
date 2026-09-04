@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #12141c;
 }
 
 header {
@@ -8,6 +8,14 @@ header {
     padding: 2px;
     background-color: #100f0f88;
     column-gap: 20px;
+}
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #0c0d17;
+    text-align: center;
+    padding: 10px 0;
 }
 
 ul.navbar li a {
@@ -27,9 +35,9 @@ ul.navbar li a.here{
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    border: 3px solid #DDB7FF;
-    background-color: #9E4BED;
-    color: #fff;
+    border: 3px solid #490080;
+    background-color: #2C0051;
+    color: #F0DBFF;
     cursor: pointer;
 }
 
