@@ -13,14 +13,31 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+
 footer {
+    color: #fff;
     position: relative;
     bottom: 0px;
     width: 100%;
     background-color: #0c0d17;
     text-align: center;
     padding: 10px 0;
+    z-index: -1;
+    align-items: center;
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a{
+    color: #F0DBFF;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
 
 .user-info {
     color: #fff;
@@ -62,7 +79,7 @@ ul.navbar li a.here{
     background-color: #100f0f88;
 }
 
-h1 {
+header h1 {
     color: #A855F7;
     width: 250px;
     align-items: center;
@@ -133,7 +150,7 @@ button.chatBot-btn {
     height: 50px;
     border-radius: 3px;
     border: 3px solid #842BD2;
-    background-color: #fff;
+    background-color: #000;
     color: #0000;
     position: fixed;
     bottom: 20px;
@@ -247,14 +264,5 @@ button.chatBot-btn {
 
 .movie-card :hover{
     transform: scale(1.05);
-}
-
-footer {
-    position: relative;
-    bottom: 10px;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
 
