@@ -21,21 +21,40 @@ footer {
     width: 100%;
     background-color: #0c0d17;
     text-align: center;
-    padding: 10px 0;
-    z-index: -1;
+    padding: 20px 0;
+    z-index: 0;
     align-items: center;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-footer a{
+footer .footer-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #be79ff;
+}
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+
+}
+footer .footer-links a {
     color: #F0DBFF;
     text-decoration: none;
-    cursor: pointer; 
+    font-size: 14px;
+}
+footer .footer-links a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 
@@ -54,6 +73,11 @@ ul.navbar li a {
     list-style: none;
     width: 100%;
     white-space: nowrap;
+}
+ul.navbar li a :hover{
+    color: #fff;
+    font-size: 30px;
+
 }
 ul.navbar li a.here{
     color: #fff;
@@ -156,6 +180,7 @@ button.chatBot-btn {
     bottom: 20px;
     right: 20px;
     object-fit: cover;
+    z-index: 1;
 }
 
 .top-section {
