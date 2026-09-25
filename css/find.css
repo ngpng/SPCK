@@ -91,14 +91,13 @@ input{
     padding-bottom: 10px;
 }
 
-/* Games Grid */
 #results {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
 }
 
-/* Individual Game Card */
+
 .game-card {
     background: #1e1e1e;
     border-radius: 8px;
